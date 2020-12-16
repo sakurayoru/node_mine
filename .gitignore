@@ -1,4 +1,11 @@
-```# Logs
+# tokenとか
+package.json
+token.txt
+thumbnail.db
+.DS_Store
+._.DS_Store
+
+# Logs
 logs
 *.log
 npm-debug.log*
