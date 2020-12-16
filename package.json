@@ -1,0 +1,23 @@
+{
+  "name": "node_mine",
+  "version": "1.0.0",
+  "description": "マイクラとガイザーの再起動をNode.js使ってディスコードで管理してみた。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakurayoru/node_mine.git"
+  },
+  "keywords": [],
+  "author": "sakurayoru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sakurayoru/node_mine/issues"
+  },
+  "homepage": "https://github.com/sakurayoru/node_mine#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
