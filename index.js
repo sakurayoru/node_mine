@@ -1,4 +1,3 @@
-import systemctl from 'systemctl'
 const Discord = require('discord.js')
 const fs = require('fs')
 const client = new Discord.Client()
@@ -14,13 +13,22 @@ client.on('message', async msg => {
     msg.channel.send('Pong!')
   }
   if(msg.content === '!reboot ガイザー'){
-    systemctl.restart('xpsv-geyser').than(output => console.log)
     msg.channel.send('ガイザーを再起動します\n')
+    const exec = require('child_process').exec
+    exec('sh geyser_restart.sh', (err, stdout, stderr) => {
+      if (err) { console.log(err); }
+      console.log(stdout);
+    });
     console.log('ガイザーを再起動します\n')
   }
-  if(msg.content === '!reboot マイクラ'){
-    msg.channel.send('ごめんね\nこの機能は実装できてないんだ')
-  }
-})
+  if(msg.content === '!reboot minecraft'){
+    msg.channel.send('minecraftを再起動します\n')
+    const exec = require('child_process').exec
+    exec('sh minecraft_restart.sh', (err, stdout, stderr) => {
+      if (err) { console.log(err); }
+      console.log(stdout);
+    });
+    console.log('ガイザーを再起動します\n')
+  }})
 
 client.login(token)
