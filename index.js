@@ -1,8 +1,7 @@
 const Discord = require('discord.js')
 const fs = require('fs')
 const client = new Discord.Client()
-const text = fs.readFileSync("./token.txt", 'utf8')
-const token = text.toString()
+const token = require("./token.json").token
 
 client.on('ready', () => {
   console.log(`${client.user.username} でログインしています。`)
