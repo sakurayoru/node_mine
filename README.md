@@ -7,9 +7,13 @@
 node -v
 npm -v
 ```
-- index.jsと同じフォルダにGeyserMCを再起動する.shを置きます(```geyser_reboot.sh```)
+- サーバー設定などから再起動させたいロールのロールIDを取ってくる
+- サーバーの追加でメッセージを送りたい場所のチャンネルIDを取ってくる
+- config.jsonの```role_ID```に再起動させられるロールIDを指定
+- config.jsonの```tokenID```のtokenIDにtokenを入力する
+- config.jsonの```channel_ID```にチャンネルIDを入力する
+- index.jsと同じフォルダにGeyserMCを再起動するスクリプトを置きます(```geyser_reboot.sh```)
 - ```geyser_reboot.sh```に書かれたパス等をよしなに調整
-- token.jsonの```tokenID```のtokenIDにtokenを入力する
-- role.jsonの```role_name```に再起動させられるロールを1つ指定
 - ```npm i```を実行
 - ```node index.js```を実行(これだとフォアグラウンド動作の為pm2やscreen、systemdでバックグラウンドにすること推奨)
+- 再起動する必要があるタイミングでDiscordで```!reboot geyser```と入力
