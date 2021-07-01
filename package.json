@@ -1,7 +1,7 @@
 {
   "name": "node_mine",
-  "version": "1.1.0",
-  "description": "ガイザーの再起動をNode.js使ってディスコードで管理してみた。",
+  "version": "1.2.0",
+  "description": "GeyserMCの再起動をNode.js使ってDiscordで管理してみた。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
